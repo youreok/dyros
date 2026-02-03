@@ -1,0 +1,24 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Move the right arm to the microwave handle",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='microwave_handle')"
+    },
+    {
+      "step": 2,
+      "intent": "Grasp the microwave handle with the right arm",
+      "subtask": "grasp(actor='microwave_handle', arm_tag='right')"
+    },
+    {
+      "step": 3,
+      "intent": "Pull the microwave handle to open it",
+      "subtask": "move_by_displacement(arm_tag='right', dir='x', move_axis='world')"
+    },
+    {
+      "step": 4,
+      "intent": "Release the microwave handle",
+      "subtask": "open_gripper(arm_tag='right')"
+    }
+  ]
+}

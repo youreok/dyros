@@ -1,0 +1,34 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Approach the roller with left arm",
+      "subtask": "move_to_pose(arm_tag='left', target_pose='roller_side_left')"
+    },
+    {
+      "step": 2,
+      "intent": "Approach the roller with right arm",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='roller_side_right')"
+    },
+    {
+      "step": 3,
+      "intent": "Grasp the roller with left arm",
+      "subtask": "grasp(actor='roller', arm_tag='left')"
+    },
+    {
+      "step": 4,
+      "intent": "Grasp the roller with right arm",
+      "subtask": "grasp(actor='roller', arm_tag='right')"
+    },
+    {
+      "step": 5,
+      "intent": "Secure grip with left arm",
+      "subtask": "close_gripper(arm_tag='left')"
+    },
+    {
+      "step": 6,
+      "intent": "Secure grip with right arm",
+      "subtask": "close_gripper(arm_tag='right')"
+    }
+  ]
+}

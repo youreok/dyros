@@ -1,0 +1,19 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Move right arm above the bell",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='above_bell')"
+    },
+    {
+      "step": 2,
+      "intent": "Lower right arm to click the bell",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z', move_axis='world')"
+    },
+    {
+      "step": 3,
+      "intent": "Press the bell",
+      "subtask": "close_gripper(arm_tag='right')"
+    }
+  ]
+}

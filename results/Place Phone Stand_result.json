@@ -1,0 +1,24 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the phone with the left arm",
+      "subtask": "grasp(actor='phone', arm_tag='left')"
+    },
+    {
+      "step": 2,
+      "intent": "Move the phone to the phone stand",
+      "subtask": "move_to_pose(arm_tag='left', target_pose='phone_stand_position')"
+    },
+    {
+      "step": 3,
+      "intent": "Place the phone on the phone stand",
+      "subtask": "place(actor='phone', arm_tag='left', target_pose='phone_stand')"
+    },
+    {
+      "step": 4,
+      "intent": "Open the gripper to release the phone",
+      "subtask": "open_gripper(arm_tag='left')"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Move the right arm to the switch position",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='switch_position')"
+    },
+    {
+      "step": 2,
+      "intent": "Press the switch",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z', move_axis='world')"
+    }
+  ]
+}

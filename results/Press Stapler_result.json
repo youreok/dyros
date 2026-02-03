@@ -1,0 +1,14 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Move the right arm to the stapler's position",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='stapler_top')"
+    },
+    {
+      "step": 2,
+      "intent": "Press the stapler using the right arm",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z', move_axis='world')"
+    }
+  ]
+}

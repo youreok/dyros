@@ -1,0 +1,34 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the bottle with left arm",
+      "subtask": "grasp(actor='bottle', arm_tag='left')"
+    },
+    {
+      "step": 2,
+      "intent": "Lift the bottle slightly upwards",
+      "subtask": "move_by_displacement(arm_tag='left', dir='z', move_axis='world')"
+    },
+    {
+      "step": 3,
+      "intent": "Shake the bottle by moving left and right",
+      "subtask": "move_by_displacement(arm_tag='left', dir='x', move_axis='world')"
+    },
+    {
+      "step": 4,
+      "intent": "Shake the bottle by moving right and left",
+      "subtask": "move_by_displacement(arm_tag='left', dir='-x', move_axis='world')"
+    },
+    {
+      "step": 5,
+      "intent": "Lower the bottle back to the table",
+      "subtask": "move_by_displacement(arm_tag='left', dir='-z', move_axis='world')"
+    },
+    {
+      "step": 6,
+      "intent": "Release the bottle",
+      "subtask": "open_gripper(arm_tag='left')"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the small bin with the right arm",
+      "subtask": "grasp(actor='small_bin', arm_tag='right')"
+    },
+    {
+      "step": 2,
+      "intent": "Lift the small bin",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z', move_axis='world')"
+    },
+    {
+      "step": 3,
+      "intent": "Move the small bin to above the big bin",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='above_big_bin')"
+    },
+    {
+      "step": 4,
+      "intent": "Tilt the small bin to pour out the balls",
+      "subtask": "move_by_displacement(arm_tag='right', dir='x', move_axis='arm')"
+    },
+    {
+      "step": 5,
+      "intent": "Return the small bin to the table",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='table_center')"
+    },
+    {
+      "step": 6,
+      "intent": "Release the small bin",
+      "subtask": "open_gripper(arm_tag='right')"
+    }
+  ]
+}

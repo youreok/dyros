@@ -1,0 +1,19 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the cube with left arm",
+      "subtask": "grasp(actor='cube', arm_tag='left')"
+    },
+    {
+      "step": 2,
+      "intent": "Move the cube to the right of the smartphone",
+      "subtask": "move_to_pose(arm_tag='left', target_pose='right_of_smartphone')"
+    },
+    {
+      "step": 3,
+      "intent": "Place the cube down",
+      "subtask": "place(actor='cube', arm_tag='left', target_pose='right_of_smartphone')"
+    }
+  ]
+}

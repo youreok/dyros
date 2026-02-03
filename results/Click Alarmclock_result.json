@@ -1,0 +1,14 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Move right arm to the alarm clock's top center",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='alarm_clock_top_center')"
+    },
+    {
+      "step": 2,
+      "intent": "Press the alarm clock's top button",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z', move_axis='world')"
+    }
+  ]
+}

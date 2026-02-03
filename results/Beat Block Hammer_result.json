@@ -1,0 +1,24 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the hammer with the right arm",
+      "subtask": "grasp(actor='hammer', arm_tag='right')"
+    },
+    {
+      "step": 2,
+      "intent": "Lift the hammer",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z', move_axis='world')"
+    },
+    {
+      "step": 3,
+      "intent": "Move the hammer above the block",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='block_top_pose')"
+    },
+    {
+      "step": 4,
+      "intent": "Beat the block with the hammer",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z', move_axis='world')"
+    }
+  ]
+}

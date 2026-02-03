@@ -1,0 +1,44 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Move the left arm to the cabinet handle",
+      "subtask": "move_to_pose(arm_tag='left', target_pose='cabinet_handle')"
+    },
+    {
+      "step": 2,
+      "intent": "Grasp the cabinet handle with left arm",
+      "subtask": "grasp(actor='cabinet_handle', arm_tag='left')"
+    },
+    {
+      "step": 3,
+      "intent": "Open the drawer using left arm",
+      "subtask": "move_by_displacement(arm_tag='left', dir='x', move_axis='world')"
+    },
+    {
+      "step": 4,
+      "intent": "Move the right arm to the object on the table",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='table_object')"
+    },
+    {
+      "step": 5,
+      "intent": "Grasp the object with right arm",
+      "subtask": "grasp(actor='object', arm_tag='right')"
+    },
+    {
+      "step": 6,
+      "intent": "Move the object to the open drawer using right arm",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='open_drawer')"
+    },
+    {
+      "step": 7,
+      "intent": "Place the object in the drawer",
+      "subtask": "place(actor='object', arm_tag='right', target_pose='drawer_inside')"
+    },
+    {
+      "step": 8,
+      "intent": "Release the cabinet handle with left arm",
+      "subtask": "open_gripper(arm_tag='left')"
+    }
+  ]
+}

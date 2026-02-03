@@ -1,0 +1,19 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Approach the bottle with the right arm",
+      "subtask": "move_to_pose(arm_tag='right', target_pose='bottle_position')"
+    },
+    {
+      "step": 2,
+      "intent": "Grasp the bottle with the right arm",
+      "subtask": "grasp(actor='bottle', arm_tag='right')"
+    },
+    {
+      "step": 3,
+      "intent": "Lift the bottle upright",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z')"
+    }
+  ]
+}

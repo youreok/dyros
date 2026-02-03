@@ -1,0 +1,24 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the scanner with the left arm",
+      "subtask": "grasp(actor='scanner', arm_tag='left')"
+    },
+    {
+      "step": 2,
+      "intent": "Grasp the object with the right arm",
+      "subtask": "grasp(actor='object', arm_tag='right')"
+    },
+    {
+      "step": 3,
+      "intent": "Position the scanner to scan the object",
+      "subtask": "move_to_pose(arm_tag='left', target_pose='object_position')"
+    },
+    {
+      "step": 4,
+      "intent": "Scan the object with the scanner",
+      "subtask": "perform_scan(arm_tag='left', object='object')"
+    }
+  ]
+}

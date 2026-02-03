@@ -1,0 +1,24 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the left handle of the pot with the left arm",
+      "subtask": "grasp(actor='pot', arm_tag='left')"
+    },
+    {
+      "step": 2,
+      "intent": "Grasp the right handle of the pot with the right arm",
+      "subtask": "grasp(actor='pot', arm_tag='right')"
+    },
+    {
+      "step": 3,
+      "intent": "Lift the pot",
+      "subtask": "move_by_displacement(arm_tag='left', dir='z', move_axis='world')"
+    },
+    {
+      "step": 4,
+      "intent": "Lift the pot",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z', move_axis='world')"
+    }
+  ]
+}

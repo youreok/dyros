@@ -1,0 +1,19 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the bread with the left arm",
+      "subtask": "grasp(actor='bread', arm_tag='left')"
+    },
+    {
+      "step": 2,
+      "intent": "Move the bread to the basket",
+      "subtask": "move_to_pose(arm_tag='left', target_pose='basket_inside')"
+    },
+    {
+      "step": 3,
+      "intent": "Release the bread into the basket",
+      "subtask": "open_gripper(arm_tag='left')"
+    }
+  ]
+}

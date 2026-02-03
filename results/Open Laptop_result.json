@@ -1,0 +1,14 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the lid of the laptop with the right arm",
+      "subtask": "grasp(actor='laptop_lid', arm_tag='right')"
+    },
+    {
+      "step": 2,
+      "intent": "Lift the laptop lid to open it",
+      "subtask": "move_by_displacement(arm_tag='right', dir='z', move_axis='world')"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Grasp the first bottle with the left arm",
+      "subtask": "grasp(actor='first_bottle', arm_tag='left')"
+    },
+    {
+      "step": 2,
+      "intent": "Grasp the second bottle with the right arm",
+      "subtask": "grasp(actor='second_bottle', arm_tag='right')"
+    }
+  ]
+}
