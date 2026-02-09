@@ -49,3 +49,7 @@ Stack Bowls Two,Stack the two bowls on top of each other.,002_bowl,
 Stamp Seal,Grab the stamp and stamp onto the specific color mat.,"100_seal, block",
 Turn Switch,Use the robotic arm to click the switch.,056_switch,
 Move Pillbottle Pad,Use one arm to pick the pillbottle and place it onto the pad.,"080_pillbottle, block",
+Screwing A Screw, Hold the screwdriver in one hane and bring it to the screw to perform screwing, "screwdriver, screw",
+Bolt Wrench, "Grasp the wrench ,slide it onto the bolt head from the side and rotate it to tighten", "bolt, wrench",
+Open Door, "Grasp the doorhandle and turn it", "doorhandle",
+Open Drawer, "Grasp the Drawer handle and pull it", "drawer"

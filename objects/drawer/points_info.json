@@ -1,0 +1,16 @@
+{
+  "contact_points": [
+    {
+      "id": 0,
+      "description": "On the handle of the drawer",
+      "usage": "Primary grasp point for opening the drawer. Approach along the local Z-axis (red arrow) to secure the grip on the handle. Once held, apply linear pulling force along the Y-axis."
+    }
+  ],
+  "functional_points": [
+    {
+      "id": 0,
+      "description": "Reference point for drawer opening orientation",
+      "usage": "Linear interaction indicator. Explicitly defines that the drawer must be pulled along the local Y-axis (blue arrow) to be extracted from the cabinet. The exact spatial position is used for vector alignment."
+    }
+  ]
+}

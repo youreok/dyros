@@ -1,0 +1,11 @@
+{
+  "contact_points": [
+  ],
+  "functional_points": [
+    {
+      "id": 0,
+      "description": "Inner jaws of the wrench head",
+      "usage": "Radial interaction point. Approach the bolt from the side along the local wrench's Z-axis for lateral engagement. After seating, apply torque (ω_y) around the bolt's Y-axis."
+    }
+  ]
+}

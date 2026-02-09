@@ -1,0 +1,60 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Approach and grasp the handle of the drawer",
+      "subtask": "grasp",
+      "actor": "drawer",
+      "arm_tag": "left",
+      "actor_point": {
+        "type": "contact_point",
+        "id": 0
+      },
+      "vectorization": {
+        "frame_mode": "CONTACT",
+        "V": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "M": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "intent": "Pull the drawer along the Y-axis to open it",
+      "subtask": "move_by_displacement",
+      "actor": "drawer",
+      "arm_tag": "left",
+      "vectorization": {
+        "frame_mode": "FUNCTIONAL",
+        "V": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "M": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}

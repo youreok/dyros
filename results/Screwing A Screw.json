@@ -1,0 +1,99 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Approach and grasp the screwdriver",
+      "subtask": "grasp",
+      "actor": "screwdriver",
+      "arm_tag": "right",
+      "actor_point": {
+        "type": "contact_point",
+        "id": 0
+      },
+      "vectorization": {
+        "frame_mode": "CONTACT",
+        "V": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "M": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "intent": "Move the screwdriver tip to align with the screw head",
+      "subtask": "move_to_pose",
+      "actor": "screwdriver",
+      "arm_tag": "right",
+      "actor_point": {
+        "type": "functional_point",
+        "id": 0
+      },
+      "target": "screw",
+      "target_point": {
+        "type": "functional_point",
+        "id": 0
+      },
+      "vectorization": {
+        "frame_mode": "FUNCTIONAL",
+        "V": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "M": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "intent": "Perform screwing action by rotating the screwdriver",
+      "subtask": "rotate",
+      "actor": "screwdriver",
+      "arm_tag": "right",
+      "actor_point": {
+        "type": "functional_point",
+        "id": 0
+      },
+      "vectorization": {
+        "frame_mode": "FUNCTIONAL",
+        "V": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "M": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "sequence": [
+    {
+      "step": 1,
+      "intent": "Approach and grasp the lever handle",
+      "subtask": "grasp",
+      "actor": "doorhandle",
+      "arm_tag": "right",
+      "actor_point": {
+        "type": "contact_point",
+        "id": 0
+      },
+      "vectorization": {
+        "frame_mode": "CONTACT",
+        "V": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "M": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "intent": "Rotate the handle around the base axis to open the door",
+      "subtask": "rotate",
+      "actor": "doorhandle",
+      "arm_tag": "right",
+      "actor_point": {
+        "type": "functional_point",
+        "id": 0
+      },
+      "vectorization": {
+        "frame_mode": "FUNCTIONAL",
+        "V": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "M": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      }
+    }
+  ]
+}
