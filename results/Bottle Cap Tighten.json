@@ -1,0 +1,85 @@
+{
+  "schema_version": "v1.0",
+  "task": "Bottle Cap Tighten",
+  "objects": [
+    "bottle",
+    "cap"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "cap",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "M": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Grasp the cap using the knurled grip area."
+    },
+    {
+      "subtask": "move_to_pose",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "cap",
+      "target_obj": "bottle",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "M": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Align and place the cap onto the bottle mouth."
+    },
+    {
+      "subtask": "rotate",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "cap",
+      "target_obj": "bottle",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "M": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Rotate the cap to tighten around the bottle mouth."
+    }
+  ]
+}

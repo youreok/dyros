@@ -1,0 +1,18 @@
+{
+  "contact_points": [],
+  "functional_points": [
+    {
+      "id": 0,
+      "description": "Nail head center (impact target)",
+      "usage": "Target point for hammer strike. Align hammer head and move downward to hit this point.",
+      "frame_hint": {
+        "type": "FUNCTIONAL",
+        "approach_axis": "+y",
+        "action_axis": "+y",
+        "default_motion": "target_alignment_reference",
+        "approach_note": "For striking tasks, the tool should approach/align toward this point, then move along WORLD +y to strike.",
+        "disambiguation": "If selecting one representative approach direction, use +y FUNCTIONAL as the local approach axis, but execute the strike in WORLD for gravity consistency."
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "v1.0",
+  "task": "Pick Hammer and Lift",
+  "objects": [
+    "hammer",
+    "nail"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "hammer",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "M": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Approach handle along +z CONTACT for grasping."
+    },
+    {
+      "subtask": "move_by_displacement",
+      "frame": "WORLD",
+      "actor_obj": "hammer",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "M": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Lift hammer straight up in WORLD frame."
+    }
+  ]
+}

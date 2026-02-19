@@ -1,0 +1,110 @@
+{
+  "schema_version": "v1.0",
+  "task": "Cap Transfer to Bottle",
+  "objects": [
+    "bottle",
+    "cap"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "cap",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Grasp the cap along +z CONTACT."
+    },
+    {
+      "subtask": "move_to_pose",
+      "frame": "WORLD",
+      "actor_obj": "cap",
+      "target_obj": "bottle",
+      "actor_point": null,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Move cap above the bottle mouth."
+    },
+    {
+      "subtask": "move_to_pose",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "cap",
+      "target_obj": "bottle",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Align cap with bottle opening using rotation."
+    },
+    {
+      "subtask": "place",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "cap",
+      "target_obj": "bottle",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Place cap onto the bottle mouth."
+    }
+  ]
+}

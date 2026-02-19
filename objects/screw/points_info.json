@@ -5,7 +5,7 @@
         {
             "id": 0,
             "description": "Screw Head",
-            "usage": " Used to indicate the position where the screwdriver tip contacts a screw."
+            "usage": " Used to indicate the position where the screwdriver tip contacts a screw. +y is tighten and -y is loosen."
         }
     ]
 }

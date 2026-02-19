@@ -1,0 +1,5 @@
+idx,subtask,frame,actor_obj,actor_point,target_obj,target_point,vx,vy,vz,wx,wy,wz,mx,my,mz,mrx,mry,mrz,notes
+0,grasp,CONTACT,key,0,,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Grasp the key handle for insertion.
+1,move_to_pose,FUNCTIONAL,key,0,keyhole,0,0.0,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Insert the key into the keyhole.
+2,rotate,FUNCTIONAL,key,0,,,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Rotate the key to lock.
+3,move_by_displacement,FUNCTIONAL,key,0,,,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Pull the key out of the keyhole.

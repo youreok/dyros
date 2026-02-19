@@ -1,0 +1,110 @@
+{
+  "schema_version": "v1.0",
+  "task": "Bottle Cap Loosen",
+  "objects": [
+    "bottle",
+    "cap"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "bottle",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Grasp bottle mid-body."
+    },
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "cap",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Grasp cap at knurled area."
+    },
+    {
+      "subtask": "rotate",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "cap",
+      "target_obj": "bottle",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Rotate cap around -y to loosen."
+    },
+    {
+      "subtask": "move_to_pose",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "cap",
+      "target_obj": "bottle",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Lift cap off the bottle."
+    }
+  ]
+}

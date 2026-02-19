@@ -1,0 +1,5 @@
+idx,subtask,frame,actor_obj,actor_point,target_obj,target_point,vx,vy,vz,wx,wy,wz,mx,my,mz,mrx,mry,mrz,notes
+0,grasp,CONTACT,bottle,0,,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Grasp bottle mid-body.
+1,grasp,CONTACT,cap,0,,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Grasp cap at knurled area.
+2,rotate,FUNCTIONAL,cap,0,bottle,0,0.0,0.0,0.0,0.0,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Rotate cap around -y to loosen.
+3,move_to_pose,FUNCTIONAL,cap,0,bottle,0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Lift cap off the bottle.

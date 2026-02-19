@@ -1,0 +1,4 @@
+idx,subtask,frame,actor_obj,actor_point,target_obj,target_point,vx,vy,vz,wx,wy,wz,mx,my,mz,mrx,mry,mrz,notes
+0,grasp,CONTACT,cap,0,,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Grasp the cap using the knurled grip area.
+1,move_to_pose,FUNCTIONAL,cap,0,bottle,0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Align and place the cap onto the bottle mouth.
+2,rotate,FUNCTIONAL,cap,0,bottle,0,0.0,0.0,0.0,0.0,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Rotate the cap to tighten around the bottle mouth.

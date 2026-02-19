@@ -1,64 +1,59 @@
 {
+  "schema_version": "v1.0",
+  "task": "Open Door",
+  "objects": [
+    "doorhandle"
+  ],
   "sequence": [
     {
-      "step": 1,
-      "intent": "Approach and grasp the lever handle",
       "subtask": "grasp",
-      "actor": "doorhandle",
-      "arm_tag": "right",
-      "actor_point": {
-        "type": "contact_point",
-        "id": 0
-      },
-      "vectorization": {
-        "frame_mode": "CONTACT",
-        "V": [
-          0,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "M": [
-          1,
-          1,
-          0,
-          1,
-          1,
-          1
-        ]
-      }
+      "frame": "CONTACT",
+      "actor_obj": "doorhandle",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "M": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Approach and secure grip on handle."
     },
     {
-      "step": 2,
-      "intent": "Rotate the handle around the base axis to open the door",
       "subtask": "rotate",
-      "actor": "doorhandle",
-      "arm_tag": "right",
-      "actor_point": {
-        "type": "functional_point",
-        "id": 0
-      },
-      "vectorization": {
-        "frame_mode": "FUNCTIONAL",
-        "V": [
-          0,
-          0,
-          0,
-          0,
-          1,
-          0
-        ],
-        "M": [
-          1,
-          1,
-          1,
-          1,
-          0,
-          1
-        ]
-      }
+      "frame": "FUNCTIONAL",
+      "actor_obj": "doorhandle",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "M": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Apply rotation to open door."
     }
   ]
 }

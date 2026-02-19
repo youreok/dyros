@@ -1,0 +1,2 @@
+[WARN] ZERO_STEP @ sequence[1]: V and M are all zeros (step may be redundant).
+[WARN] ZERO_STEP_FILLED @ sequence[1]: Filled all-zero step with default approach Vz=+1.0 in frame=FUNCTIONAL

@@ -1,0 +1,60 @@
+{
+  "schema_version": "v1.0",
+  "task": "Insert Key Only",
+  "objects": [
+    "key",
+    "keyhole"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "key",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Approach handle for grasping."
+    },
+    {
+      "subtask": "move_to_pose",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "key",
+      "target_obj": "keyhole",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Insert key along the insertion axis."
+    }
+  ]
+}

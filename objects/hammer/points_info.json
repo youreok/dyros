@@ -1,0 +1,27 @@
+{
+  "contact_points": [
+    {
+      "id": 0,
+      "description": "Hammer handle (near the bottom end)",
+      "usage": "Main grasp point for swinging/striking.",
+      "frame_hint": {
+        "type": "CONTACT",
+        "approach_axis": "+z",
+        "grasp_note": "For grasp, approach along +z CONTACT."
+      }
+    }
+  ],
+  "functional_points": [
+    {
+      "id": 0,
+      "description": "Hammer head striking face (front surface center)",
+      "usage": "Functional point for impact. Approach toward the nail along the head normal, then strike (downward motion in WORLD or along functional approach axis).",
+      "frame_hint": {
+        "type": "FUNCTIONAL",
+        "action_axis": "+y",
+        "default_motion": "approach_then_strike_same_axis",
+        "action_note": "To strike: translate along +y WORLD (downward) or along +y FUNCTIONAL depending on your convention."
+      }
+    }
+  ]
+}

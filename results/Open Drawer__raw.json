@@ -1,0 +1,59 @@
+{
+  "schema_version": "v1.0",
+  "task": "Open Drawer",
+  "objects": [
+    "drawer"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "drawer",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Approach and grasp handle"
+    },
+    {
+      "subtask": "move_by_displacement",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "drawer",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Pull drawer along Y-axis"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "v1.0",
+  "task": "Screwing A Screw",
+  "objects": [
+    "screwdriver",
+    "screw"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "screwdriver",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Grasp the screwdriver handle."
+    },
+    {
+      "subtask": "move_to_pose",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "screwdriver",
+      "target_obj": "screw",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Align the screwdriver tip with the screw head."
+    },
+    {
+      "subtask": "rotate",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "screwdriver",
+      "target_obj": "screw",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Apply torque to screw the screw."
+    }
+  ]
+}

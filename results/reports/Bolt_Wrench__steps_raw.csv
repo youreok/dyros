@@ -1,0 +1,5 @@
+idx,subtask,frame,actor_obj,actor_point,target_obj,target_point,vx,vy,vz,wx,wy,wz,mx,my,mz,mrx,mry,mrz,notes
+0,grasp,CONTACT,wrench,0,,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Grasp wrench handle for leverage
+1,move_to_pose,FUNCTIONAL,wrench,0,bolt,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Align wrench jaw and bolt
+2,move_to_pose,FUNCTIONAL,wrench,0,bolt,0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Slide wrench onto bolt
+3,rotate,FUNCTIONAL,wrench,0,,,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Tighten bolt by rotating

@@ -1,0 +1,30 @@
+{
+  "contact_points": [
+    {
+      "id": 0,
+      "description": "Outer side surface of the cap (knurled grip area)",
+      "usage": "Main grasp point for picking and twisting the cap.",
+      "frame_hint": {
+        "type": "CONTACT",
+        "approach_axis": "+z",
+        "grasp_note": "For grasp, approach along +z CONTACT."
+      }
+    }
+  ],
+  "functional_points": [
+    {
+      "id": 0,
+      "description": "Cap center axis (thread axis)",
+      "usage": "Functional axis for screwing/unscrewing. Cap should be aligned to bottle mouth axis and rotated around the thread axis.",
+      "frame_hint": {
+        "type": "FUNCTIONAL",
+        "approach_axis": "+y",
+        "action_axis": "+y",
+        "default_motion": "approach_then_rotate_same_axis",
+        "approach_note": "To seat cap onto bottle: translate along +y FUNCTIONAL (V=[0,1,0,0,0,0]).",
+        "action_note": "To tighten/loosen: rotate around +y/-y FUNCTIONAL.",
+        "disambiguation": "If alignment is ambiguous, do rotate-only alignment first (ω), then translate-only approach (v)."
+      }
+    }
+  ]
+}

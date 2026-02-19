@@ -1,0 +1,40 @@
+{
+  "contact_points": [
+    {
+      "id": 0,
+      "description": "Mid-body of the bottle (around the label area)",
+      "usage": "Main grasp point for lifting and moving the bottle.",
+      "frame_hint": {
+        "type": "CONTACT",
+        "approach_axis": "+z",
+        "grasp_note": "For grasp, use +z of CONTACT as approach direction (V=[0,0,1,0,0,0] in CONTACT)."
+      }
+    },
+    {
+      "id": 1,
+      "description": "Upper body / neck area (below the bottle mouth)",
+      "usage": "Alternative grasp point when precise placement at the mouth is needed.",
+      "frame_hint": {
+        "type": "CONTACT",
+        "approach_axis": "+z",
+        "grasp_note": "Use +z CONTACT approach; prefer this when the mouth alignment is important."
+      }
+    }
+  ],
+  "functional_points": [
+    {
+      "id": 0,
+      "description": "Bottle mouth center (opening axis)",
+      "usage": "Target functional axis for capping: the cap should approach along this axis and rotate around it to tighten/loosen.",
+      "frame_hint": {
+        "type": "FUNCTIONAL",
+        "approach_axis": "+y",
+        "action_axis": "+y",
+        "default_motion": "approach_then_rotate_same_axis",
+        "approach_note": "If task says place/seat/put cap onto bottle: translate along +y FUNCTIONAL (V=[0,1,0,0,0,0]).",
+        "action_note": "If task says tighten/loosen cap: rotate around +y/-y FUNCTIONAL.",
+        "disambiguation": "If both are required, split into two steps: (1) approach v, (2) rotate ω."
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+idx,subtask,frame,actor_obj,actor_point,target_obj,target_point,vx,vy,vz,wx,wy,wz,mx,my,mz,mrx,mry,mrz,notes
+0,grasp,CONTACT,screwdriver,0,,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Grasp screwdriver at handle for manipulation
+1,move_to_pose,FUNCTIONAL,screwdriver,0,screw,0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Align screwdriver tip with screw head
+2,rotate,FUNCTIONAL,screwdriver,0,screw,0,0.0,0.0,0.0,0.0,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Rotate counter-clockwise to unscrew

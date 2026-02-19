@@ -1,0 +1,59 @@
+{
+  "schema_version": "v1.0",
+  "task": "Open Door",
+  "objects": [
+    "doorhandle"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "doorhandle",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Approach and secure grip on handle."
+    },
+    {
+      "subtask": "rotate",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "doorhandle",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Apply rotation to open door."
+    }
+  ]
+}

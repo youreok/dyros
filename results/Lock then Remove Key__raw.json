@@ -1,0 +1,110 @@
+{
+  "schema_version": "v1.0",
+  "task": "Lock then Remove Key",
+  "objects": [
+    "key",
+    "keyhole"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "key",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Grasp the key handle for insertion."
+    },
+    {
+      "subtask": "move_to_pose",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "key",
+      "target_obj": "keyhole",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Insert the key into the keyhole."
+    },
+    {
+      "subtask": "rotate",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "key",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Rotate the key to lock."
+    },
+    {
+      "subtask": "move_by_displacement",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "key",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Pull the key out of the keyhole."
+    }
+  ]
+}

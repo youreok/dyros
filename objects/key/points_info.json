@@ -1,0 +1,30 @@
+{
+  "contact_points": [
+    {
+      "id": 0,
+      "description": "Key head (bow) / handle area",
+      "usage": "Grasp the key here for insertion and rotation.",
+      "frame_hint": {
+        "type": "CONTACT",
+        "approach_axis": "+z",
+        "grasp_note": "For grasp, approach along +z CONTACT."
+      }
+    }
+  ],
+  "functional_points": [
+    {
+      "id": 0,
+      "description": "Key tip (bit) and its insertion axis",
+      "usage": "Functional point for insertion into keyhole. First approach/insert along insertion axis, then rotate to unlock/lock.",
+      "frame_hint": {
+        "type": "FUNCTIONAL",
+        "approach_axis": "+y",
+        "action_axis": "+y",
+        "default_motion": "approach_then_rotate",
+        "approach_note": "If task says insert/put into keyhole: translate along -y FUNCTIONAL (V=[0,-1,0,0,0,0]).",
+        "action_note": "If task says unlock/lock: rotate around +y/-y FUNCTIONAL.",
+        "disambiguation": "Split into two steps if needed: (1) insert v, (2) rotate ω."
+      }
+    }
+  ]
+}

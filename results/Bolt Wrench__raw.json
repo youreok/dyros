@@ -1,0 +1,110 @@
+{
+  "schema_version": "v1.0",
+  "task": "Grasp the wrench, slide it onto the bolt head from the side and rotate it to tighten",
+  "objects": [
+    "bolt",
+    "wrench"
+  ],
+  "sequence": [
+    {
+      "subtask": "grasp",
+      "frame": "CONTACT",
+      "actor_obj": "wrench",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Grasp wrench handle for leverage"
+    },
+    {
+      "subtask": "move_to_pose",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "wrench",
+      "target_obj": "bolt",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Align wrench jaw and bolt"
+    },
+    {
+      "subtask": "move_to_pose",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "wrench",
+      "target_obj": "bolt",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Slide wrench onto bolt"
+    },
+    {
+      "subtask": "rotate",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "wrench",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "M": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Tighten bolt by rotating"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+task,ok,errors,warnings,steps_raw,steps_validated,frame_changed_steps,subtask_changed_steps,V_index_changes,M_index_changes,point_changed_steps,frames_WORLD,frames_CONTACT,frames_FUNCTIONAL,world_lift_steps,VM_RULE_FIXED,FRAME_HARD_FIXED,POINT_PARSED,ZERO_STEP
+Open Drawer,True,0,0,2,2,0,0,0,0,0,0,1,1,0,0,0,0,0
+Open Door,True,0,0,2,2,0,0,0,0,0,0,1,1,0,0,0,0,0
+Screwing A Screw,True,0,0,3,3,0,0,0,0,0,0,1,2,0,0,0,0,0
+Bolt Wrench,True,0,2,4,4,0,0,1,0,0,0,1,3,0,0,0,0,1
+Lift Wrench,True,0,0,2,2,0,0,0,0,0,1,1,0,1,0,0,0,0
+Close Drawer,True,0,1,4,4,0,0,0,0,0,0,2,2,0,0,0,0,1
+Loosen with Wrench,True,0,0,4,4,0,0,0,0,0,0,1,3,0,0,0,0,0
+Unscrewing A Screw,True,0,0,3,3,0,0,0,0,0,0,1,2,0,0,0,0,0
+Bottle Cap Tighten,True,0,0,3,3,0,0,0,0,0,0,1,2,0,0,0,0,0
+Bottle Cap Loosen,True,0,0,4,4,0,0,0,0,0,0,2,2,0,0,0,0,0
+Cap Transfer to Bottle,True,0,0,4,4,0,0,0,0,0,1,1,2,1,0,0,0,0
+Insert Key and Unlock,True,0,0,3,3,0,0,0,0,0,0,1,2,0,0,0,0,0
+Insert Key Only,True,0,0,2,2,0,0,0,0,0,0,1,1,0,0,0,0,0
+Lock then Remove Key,True,0,0,4,4,0,0,0,0,0,0,1,3,0,0,0,0,0
+Pick Hammer and Lift,True,0,0,2,2,0,0,0,0,0,1,1,0,1,0,0,0,0

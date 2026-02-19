@@ -1,60 +1,59 @@
 {
+  "schema_version": "v1.0",
+  "task": "Open Drawer",
+  "objects": [
+    "drawer"
+  ],
   "sequence": [
     {
-      "step": 1,
-      "intent": "Approach and grasp the handle of the drawer",
       "subtask": "grasp",
-      "actor": "drawer",
-      "arm_tag": "left",
-      "actor_point": {
-        "type": "contact_point",
-        "id": 0
-      },
-      "vectorization": {
-        "frame_mode": "CONTACT",
-        "V": [
-          0,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "M": [
-          1,
-          1,
-          0,
-          1,
-          1,
-          1
-        ]
-      }
+      "frame": "CONTACT",
+      "actor_obj": "drawer",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "M": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Approach and grasp handle"
     },
     {
-      "step": 2,
-      "intent": "Pull the drawer along the Y-axis to open it",
       "subtask": "move_by_displacement",
-      "actor": "drawer",
-      "arm_tag": "left",
-      "vectorization": {
-        "frame_mode": "FUNCTIONAL",
-        "V": [
-          0,
-          1,
-          0,
-          0,
-          0,
-          0
-        ],
-        "M": [
-          1,
-          0,
-          1,
-          1,
-          1,
-          1
-        ]
-      }
+      "frame": "FUNCTIONAL",
+      "actor_obj": "drawer",
+      "target_obj": null,
+      "actor_point": 0,
+      "target_point": null,
+      "V": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "M": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Pull drawer along Y-axis"
     }
   ]
 }

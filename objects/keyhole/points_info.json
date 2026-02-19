@@ -1,0 +1,13 @@
+{
+  "contact_points": [],
+  "functional_points": [
+    {
+      "id": 0,
+      "description": "Keyhole center and insertion axis",
+      "usage": "Target functional axis. The key should approach along this insertion axis and then rotate to unlock/lock.",
+      "frame_hint": {
+        "action_note": "For unlock/lock, rotate around +y/-y FUNCTIONAL."
+      }
+    }
+  ]
+}

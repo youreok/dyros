@@ -2,15 +2,24 @@
   "contact_points": [
     {
       "id": 0,
-      "description": "At the end of the wrench handle (lever arm)",
-      "usage": "Grasp point for lever action. Held here to maximize torque around the functional axis."
+      "description": "End of the wrench handle (lever arm)",
+      "usage": "Primary grasp point. Use this contact point to hold the wrench for maximum torque leverage."
     }
   ],
   "functional_points": [
     {
       "id": 0,
-      "description": "Inside the wrench head (jaws)",
-      "usage": "Radial interaction point. Requires pure rotation (ω_y) around the bolt axis. Does NOT require axial push (v_y). Focus on maintaining lateral contact with the bolt flats. when it approaches the object(like bolt) using z dir of funcional matrix"
+      "description": "Inside the wrench head (jaws), where the bolt flats are engaged",
+      "usage": "Functional interaction point for tightening/loosening a bolt head. This point is used to seat the wrench onto the bolt and apply torque.",
+      "frame_hint": {
+        "type": "FUNCTIONAL",
+        "approach_axis": "+z",
+        "action_axis": "+y",
+        "default_motion": "rotate_then_approach",
+        "approach_note": "If the task says 'slide onto / seat onto / insert onto the bolt', use translation along +z of the FUNCTIONAL frame (V = [0,0,1,0,0,0] in FUNCTIONAL).",
+        "action_note": "If the task says 'tighten / loosen', use rotation around +y of the FUNCTIONAL frame (V = [0,0,0,0,1,0] in FUNCTIONAL).",
+        "disambiguation": "If both alignment and seating are required, split into two steps: (1) rotate-only alignment (ω), (2) translate-only approach (v) along approach_axis."
+      }
     }
   ]
 }

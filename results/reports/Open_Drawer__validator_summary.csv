@@ -1,0 +1,2 @@
+task,ok,errors,warnings,steps_raw,steps_validated,frame_changed_steps,subtask_changed_steps,V_index_changes,M_index_changes,point_changed_steps,frames_WORLD,frames_CONTACT,frames_FUNCTIONAL,world_lift_steps,VM_RULE_FIXED,FRAME_HARD_FIXED,POINT_PARSED,ZERO_STEP
+Open Drawer,True,0,0,2,2,0,0,0,0,0,0,1,1,0,0,0,0,0
