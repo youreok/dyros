@@ -2,9 +2,10 @@ import pandas as pd
 import json
 import os
 import base64
+from validator import validate_plan, build_point_id_index, issues_to_text
 from openai import OpenAI
 
-client = OpenAI(api_key="your_api_key_here") 
+client = OpenAI(api_key="key") 
 
 CSV_PATH = "data/RoboTwin_Task.csv"
 OBJECT_DATA_DIR = "objects" 
@@ -36,7 +37,7 @@ def run_task_planner():
         print(f"Error: {CSV_PATH} is missing")
         return None, None
 
-    # CSV 로딩 (쉼표 문제 방지를 위해 quotechar 설정)
+    # CSV 로딩
     df = pd.read_csv(CSV_PATH, quotechar='"', skipinitialspace=True)
     with open(PROMPT_PATH, "r", encoding="utf-8") as f:
         system_prompt = f.read()
@@ -93,11 +94,35 @@ def run_task_planner():
 
         result_json = json.loads(response.choices[0].message.content)
         
-        save_path = os.path.join(OUTPUT_DIR, f"{task_name}.json")
-        with open(save_path, "w", encoding="utf-8") as f:
+        points_info_by_object = {}
+        for obj in object_list:
+            ppath = os.path.join(OBJECT_DATA_DIR, obj, "points_info.json")
+            if os.path.exists(ppath):
+                with open(ppath, "r", encoding="utf-8") as f:
+                    points_info_by_object[obj] = json.load(f)
+
+        point_index = build_point_id_index(points_info_by_object)
+
+        # ---- (B) Validate + sanitize
+        val = validate_plan(result_json, point_index, auto_fix=True)
+
+        # ---- (C) Save both raw and validated (for presentation comparison)
+        raw_path = os.path.join(OUTPUT_DIR, f"{task_name}__raw.json")
+        with open(raw_path, "w", encoding="utf-8") as f:
             json.dump(result_json, f, indent=2, ensure_ascii=False)
-        
-        return result_json, objects_str
+
+        save_path = os.path.join(OUTPUT_DIR, f"{task_name}.json")  # validated canonical output
+        with open(save_path, "w", encoding="utf-8") as f:
+            json.dump(val.sanitized, f, indent=2, ensure_ascii=False)
+
+        # optional: print issues summary
+        if val.issues:
+            print("\n[Validator Issues]")
+            print(issues_to_text(val.issues))
+        else:
+            print("\n[Validator] No issues.")
+
+        return val.sanitized, objects_str
 
     except Exception as e:
         print(f"Error during LLM Inference: {e}")
