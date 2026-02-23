@@ -8,7 +8,7 @@ from make_report import save_reports
 
 from openai import OpenAI
 
-client = OpenAI(api_key="")  # Set your API key here or via environment variable
+client = OpenAI(api_key="your OpenAI API key")  # Set your API key here or via environment variable
 
 # -------- robust paths --------
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))

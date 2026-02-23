@@ -3,14 +3,14 @@
     {
       "id": 0,
       "description": "Center of the lever handle grip",
-      "usage": "Primary grasp point for applying leverage. Approach along the local Z-axis (red arrow) to secure the grip. Once held, apply downward or rotational force."
+      "usage": "Primary grasp point for applying leverage. Approach along the local +Y-axis (green arrow) to secure the grip. Once held, apply rotational motion to open the door."
     }
   ],
   "functional_points": [
     {
       "id": 0,
       "description": "At the base rotation axis of the handle",
-      "usage": "Action point for opening the door. Requires pure rotation (ω_y) around the longitudinal Y-axis (blue arrow). Does NOT require axial push (v_y) unless the latch is stuck."
+      "usage": "Action point for opening the door. Requires pure rotation (ω_z) around the local Z-axis (blue arrow). For the 'Open Door' task, a typical choice is rotate around -Z (V=[0,0,0,0,0,-1]) unless the image/task implies the opposite."
     }
   ]
 }

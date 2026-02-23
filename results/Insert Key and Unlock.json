@@ -10,13 +10,13 @@
       "subtask": "grasp",
       "frame": "CONTACT",
       "actor_obj": "key",
-      "target_obj": null,
+      "target_obj": "key",
       "actor_point": 0,
-      "target_point": null,
+      "target_point": 0,
       "V": [
         0.0,
-        0.0,
         1.0,
+        0.0,
         0.0,
         0.0,
         0.0
@@ -29,7 +29,7 @@
         0.0,
         0.0
       ],
-      "notes": "Grasp the key head for manipulation."
+      "notes": "Grasp the key by the head."
     },
     {
       "subtask": "move_to_pose",
@@ -40,8 +40,8 @@
       "target_point": 0,
       "V": [
         0.0,
-        -1.0,
         0.0,
+        -1.0,
         0.0,
         0.0,
         0.0
@@ -54,7 +54,7 @@
         0.0,
         0.0
       ],
-      "notes": "Insert the key into the keyhole along the y-axis."
+      "notes": "Insert the key into the keyhole."
     },
     {
       "subtask": "rotate",
@@ -68,8 +68,8 @@
         0.0,
         0.0,
         0.0,
-        1.0,
-        0.0
+        0.0,
+        1.0
       ],
       "M": [
         0.0,
@@ -79,7 +79,7 @@
         0.0,
         0.0
       ],
-      "notes": "Rotate key around the y-axis to unlock."
+      "notes": "Rotate to unlock."
     }
   ]
 }

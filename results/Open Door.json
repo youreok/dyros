@@ -8,14 +8,14 @@
     {
       "subtask": "grasp",
       "frame": "CONTACT",
-      "actor_obj": "doorhandle",
-      "target_obj": null,
-      "actor_point": 0,
-      "target_point": null,
+      "actor_obj": "",
+      "target_obj": "doorhandle",
+      "actor_point": null,
+      "target_point": 0,
       "V": [
         0.0,
-        0.0,
         1.0,
+        0.0,
         0.0,
         0.0,
         0.0
@@ -28,22 +28,22 @@
         0.0,
         0.0
       ],
-      "notes": "Approach and secure grip on handle."
+      "notes": "Approach along the handle's local +Y axis."
     },
     {
       "subtask": "rotate",
       "frame": "FUNCTIONAL",
-      "actor_obj": "doorhandle",
-      "target_obj": null,
-      "actor_point": 0,
+      "actor_obj": "",
+      "target_obj": "doorhandle",
+      "actor_point": null,
       "target_point": 0,
       "V": [
         0.0,
         0.0,
         0.0,
         0.0,
-        1.0,
-        0.0
+        0.0,
+        -1.0
       ],
       "M": [
         0.0,
@@ -53,7 +53,7 @@
         0.0,
         0.0
       ],
-      "notes": "Apply rotation to open door."
+      "notes": "Rotate handle about its local -Z axis."
     }
   ]
 }

@@ -10,13 +10,13 @@
       "subtask": "grasp",
       "frame": "CONTACT",
       "actor_obj": "key",
-      "target_obj": null,
+      "target_obj": "key",
       "actor_point": 0,
-      "target_point": null,
+      "target_point": 0,
       "V": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -29,7 +29,7 @@
         0,
         0
       ],
-      "notes": "Grasp the key handle for insertion."
+      "notes": "Grasp the key by its handle."
     },
     {
       "subtask": "move_to_pose",
@@ -40,8 +40,8 @@
       "target_point": 0,
       "V": [
         0,
-        -1,
         0,
+        -1,
         0,
         0,
         0
@@ -60,16 +60,16 @@
       "subtask": "rotate",
       "frame": "FUNCTIONAL",
       "actor_obj": "key",
-      "target_obj": null,
+      "target_obj": "key",
       "actor_point": 0,
-      "target_point": null,
+      "target_point": 0,
       "V": [
         0,
         0,
         0,
         0,
-        1,
-        0
+        0,
+        -1
       ],
       "M": [
         0,
@@ -85,13 +85,13 @@
       "subtask": "move_by_displacement",
       "frame": "FUNCTIONAL",
       "actor_obj": "key",
-      "target_obj": null,
+      "target_obj": "keyhole",
       "actor_point": 0,
-      "target_point": null,
+      "target_point": 0,
       "V": [
         0,
-        1,
         0,
+        1,
         0,
         0,
         0
@@ -104,7 +104,7 @@
         0,
         0
       ],
-      "notes": "Pull the key out of the keyhole."
+      "notes": "Withdraw the key from the keyhole."
     }
   ]
 }

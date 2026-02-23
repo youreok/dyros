@@ -2,28 +2,36 @@
   "contact_points": [
     {
       "id": 0,
-      "description": "Outer side surface of the cap (knurled grip area)",
-      "usage": "Main grasp point for picking and twisting the cap.",
+      "description": "Outer side surface of the cap (grip area)",
+      "usage": "Primary grasp point to pick and manipulate the cap.",
       "frame_hint": {
         "type": "CONTACT",
         "approach_axis": "+z",
-        "grasp_note": "For grasp, approach along +z CONTACT."
+        "note": "For grasp, represent approach using +z of CONTACT."
       }
     }
   ],
   "functional_points": [
     {
       "id": 0,
-      "description": "Cap center axis (thread axis)",
-      "usage": "Functional axis for screwing/unscrewing. Cap should be aligned to bottle mouth axis and rotated around the thread axis.",
+      "description": "Cap opening / thread axis (insertion axis)",
+      "usage": "Used when aligning and seating the cap onto the bottle opening. Tightening/loosening is a separate motion after seating.",
       "frame_hint": {
         "type": "FUNCTIONAL",
+
+        "insertion_axis": "+y",
         "approach_axis": "+y",
-        "action_axis": "+y",
-        "default_motion": "approach_then_rotate_same_axis",
-        "approach_note": "To seat cap onto bottle: translate along +y FUNCTIONAL (V=[0,1,0,0,0,0]).",
-        "action_note": "To tighten/loosen: rotate around +y/-y FUNCTIONAL.",
-        "disambiguation": "If alignment is ambiguous, do rotate-only alignment first (ω), then translate-only approach (v)."
+
+        "tilt_axes_candidates": ["+x", "+z"],
+        "spin_axis": "+y",
+
+        "policy": {
+          "align": "Use a TILT rotation (ω) about an axis perpendicular to the insertion_axis (choose one from tilt_axes_candidates).",
+          "seat": "Use translation (v) along approach_axis to seat/place.",
+          "tighten_or_loosen": "Only if task explicitly says tighten/loosen: rotate (ω) about spin_axis."
+        },
+
+        "note": "Alignment changes the insertion axis direction (tilt). Spinning around the insertion axis does not help alignment; use spin only for tightening/loosening."
       }
     }
   ]

@@ -29,14 +29,14 @@
         0.0,
         0.0
       ],
-      "notes": "Grasp the cap along +z CONTACT."
+      "notes": "Grasp the cap from the side."
     },
     {
       "subtask": "move_to_pose",
       "frame": "WORLD",
       "actor_obj": "cap",
-      "target_obj": "bottle",
-      "actor_point": null,
+      "target_obj": null,
+      "actor_point": 0,
       "target_point": null,
       "V": [
         0.0,
@@ -54,21 +54,21 @@
         0.0,
         0.0
       ],
-      "notes": "Move cap above the bottle mouth."
+      "notes": "Lift the cap upward."
     },
     {
       "subtask": "move_to_pose",
-      "frame": "FUNCTIONAL",
+      "frame": "WORLD",
       "actor_obj": "cap",
       "target_obj": "bottle",
       "actor_point": 0,
       "target_point": 0,
       "V": [
         0.0,
+        -1.0,
         0.0,
         0.0,
         0.0,
-        1.0,
         0.0
       ],
       "M": [
@@ -79,7 +79,32 @@
         0.0,
         0.0
       ],
-      "notes": "Align cap with bottle opening using rotation."
+      "notes": "Move above the bottle mouth."
+    },
+    {
+      "subtask": "rotate",
+      "frame": "FUNCTIONAL",
+      "actor_obj": "cap",
+      "target_obj": "bottle",
+      "actor_point": 0,
+      "target_point": 0,
+      "V": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "M": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Tilt the cap for alignment."
     },
     {
       "subtask": "place",
@@ -104,7 +129,7 @@
         0.0,
         0.0
       ],
-      "notes": "Place cap onto the bottle mouth."
+      "notes": "Place the cap onto the bottle mouth."
     }
   ]
 }

@@ -3,15 +3,12 @@
   "functional_points": [
     {
       "id": 0,
-      "description": "Nail head center (impact target)",
-      "usage": "Target point for hammer strike. Align hammer head and move downward to hit this point.",
+      "description": "Keyhole center and insertion / rotation axis",
+      "usage": "Target functional axis. The key should approach along this insertion axis and then rotate to unlock/lock.",
       "frame_hint": {
         "type": "FUNCTIONAL",
-        "approach_axis": "+y",
-        "action_axis": "+y",
-        "default_motion": "target_alignment_reference",
-        "approach_note": "For striking tasks, the tool should approach/align toward this point, then move along WORLD +y to strike.",
-        "disambiguation": "If selecting one representative approach direction, use +y FUNCTIONAL as the local approach axis, but execute the strike in WORLD for gravity consistency."
+        "approach_note": "For inserting the key: translate along -z FUNCTIONAL.",
+        "action_note": "For unlock/lock: rotate around +z/-z FUNCTIONAL (use wz)."
       }
     }
   ]

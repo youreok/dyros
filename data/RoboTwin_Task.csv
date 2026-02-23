@@ -10,7 +10,7 @@ Close Drawer, "Grasp the Drawer handle and Open the drawer slightly, then push i
 Unscrewing A Screw, "Seat the screwdriver onto the screw head and rotater to remove the screw", "screwdriver, screw",
 Bottle Cap Tighten, "Grasp the cap, place it onto the bottle mouth, then rotate it to tighten.", "bottle, cap"
 Bottle Cap Loosen, "Grasp the bottle, rotate the cap to loosen it, then lift the cap off.", "bottle, cap"
-Cap Transfer to Bottle, "Grasp the cap, move it above the bottle mouth, align it with the bottle opening, and place it down.", "bottle, cap"
+Cap Transfer to Bottle, "Grasp the cap, lift it upward, move it above the bottle mouth, then tilt the cap to align its insertion axis with the bottle opening axis, and finally place the cap onto the bottle mouth along the insertion axis", "bottle, cap"
 Insert Key and Unlock, "Grasp the key, insert it into the keyhole, then rotate it to unlock.", "key, keyhole"
 Lock then Remove Key, "Grasp the key, insert it into the keyhole, rotate it to lock, then pull the key out.", "key, keyhole"
 Insert Key Only, "Grasp the key and insert it straight into the keyhole without rotating.", "key, keyhole"
